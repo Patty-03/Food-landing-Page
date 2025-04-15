@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food Landing Page</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devi Dining | Gourmet Burgers & Pasta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-    <!--Falta hacerlo responsive-->
-
-    <!--NAVBAR-->
+    <!-- NAVBAR -->
     <nav id="home">
         <div id="logo">
-            <p>Logo</p>
+            <p>Devi Dining</p>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
         </div>
         <ul id="navlist">
             <li class="navitem"><a href="#home">Home</a></li>
             <li class="navitem"><a href="#info">About</a></li>
             <li class="navitem"><a href="#menu">Menu</a></li>
-            <!--Cambiar el elemento por un carrito de compras-->
-            <li class="navitem"><a href="#">Reserve</a></li>
+            <li class="navitem"><a href="#reservation">Reserve</a></li>
         </ul>
     </nav>
 
-    <!--HERO-->
+    <!-- HERO -->
     <main>
-        <div>
+        <div class="hero-content">
             <h1 id="hero-title">Your food, our pleasure</h1>
             <h2 id="hero-subtitle">
                 Our restaurant gives you the marvelous experience
@@ -37,7 +36,7 @@
             </h2>
             <button type="button" id="call-to-action">
                 <a href="#menu">Watch the menu
-                    <span  id="cta-a">
+                    <span id="cta-a">
                         <i class="fa fa-chevron-right" aria-hidden="true"></i>
                     </span>
                 </a>
@@ -45,77 +44,95 @@
         </div>
     </main>
 
-    <!--RESERVATION-->
+    <!-- RESERVATION -->
     <section id="reservation">
+        <h2 class="section-title">Dining Experiences</h2>
         <div id="exp-list">
-            <ul>
-                <li>
-                    <img src="./media/romantic dinner.png" alt="">
-                    <p>Romantic dinner under the stars</p>
-                    <button type="button" class="call-to-action">Reserve Now!</button>
-                </li>
-                <li>
-                    <img src="./media/beer with friends.png" alt="">
-                    <p>Beer and tapas night with friends</p>
-                    <button type="button" class="call-to-action">Reserve Now!</button>
-                </li>
-                <li>
-                    <img src="./media/holiday with family.png" alt="">
-                    <p>Special celebration with family</p>
-                    <button type="button" class="call-to-action">Reserve Now!</button>
-                </li>
-            </ul>
+            <div class="experience-card">
+                <img src="./media/romantic dinner.png" alt="Romantic dinner">
+                <p>Romantic dinner under the stars</p>
+                <button type="button" class="call-to-action">Reserve Now!</button>
+            </div>
+            <div class="experience-card">
+                <img src="./media/beer with friends.png" alt="Beer with friends">
+                <p>Beer and tapas night with friends</p>
+                <button type="button" class="call-to-action">Reserve Now!</button>
+            </div>
+            <div class="experience-card">
+                <img src="./media/holiday with family.png" alt="Family celebration">
+                <p>Special celebration with family</p>
+                <button type="button" class="call-to-action">Reserve Now!</button>
+            </div>
         </div>
     </section>
 
-    <!--MENU-->
+    <!-- MENU -->
     <section id="menu">
         <div id="menu-header">
-            <h2>Our menu</h2>
+            <h2 class="section-title">Our Menu</h2>
             <button type="button" id="pdf-download">PDF Download</button>
         </div>
 
         <div id="chart">
             <div class="product-container">
-                <img src="./media/burger-1.png">
-                <p>Hamburger-1</p>
-                <p>$23.95</p>
+                <img src="./media/burger-1.png" alt="Classic Burger">
+                <h3>Classic Heaven</h3>
+                <p class="price">$23.95</p>
             </div>
             <div class="product-container">
-                <img src="./media/burger-2.png">
-                <p>Hamburger-2</p>
-                <p>$30.50</p>
+                <img src="./media/burger-2.png" alt="Deluxe Burger">
+                <h3>Deluxe Heaven</h3>
+                <p class="price">$30.50</p>
             </div>
             <div class="product-container">
-                <img src="./media/pasta-photo.png">
-                <p>Pasta</p>
-                <p>$28.55</p>
+                <img src="./media/pasta-photo.png" alt="Gourmet Pasta">
+                <h3>Pasta Heaven</h3>
+                <p class="price">$28.55</p>
             </div>
         </div>
     </section>
 
-    <!--INFORMATION-->
+    <!-- INFORMATION -->
     <section id="info">
-        <div id="left-info">
-            <ul id="business-info">
-                <li class="info-item"><a href="#">78787878</a></li>
-                <li class="info-item"><a href="#">info@business.com</a></li>
-                <li class="info-item"><a href="#"><Address>Georgia #45. USA</Address></a></li>
-            </ul>
-        </div>
-
-        <div id="right-info">
-            <h2>Our Contact</h2>
-            
+        <div class="info-container">
+            <div id="left-info">
+                <h2 class="section-title">Contact Us</h2>
+                <ul id="business-info">
+                    <li class="info-item"><i class="fas fa-phone"></i> <a href="tel:78787878">78787878</a></li>
+                    <li class="info-item"><i class="fas fa-envelope"></i> <a href="mailto:info@business.com">info@business.com</a></li>
+                    <li class="info-item"><i class="fas fa-map-marker-alt"></i> <a href="#">Georgia #45. USA</a></li>
+                </ul>
+            </div>
+            <div id="right-info">
+                <h2>Opening Hours</h2>
+                <p>Monday - Friday: 11am - 10pm</p>
+                <p>Saturday - Sunday: 10am - 11pm</p>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Your Restaurant. All rights reserved</p>
+        <p>&copy; 2025 Devi Dining. All rights reserved</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
     </footer>
 
-    <script src="./app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script>
+        // PDF Download
+        document.getElementById('pdf-download').addEventListener('click', function () {
+            const link = document.createElement('a');
+            link.href = './media/Menu.pdf';
+            link.download = 'Menu.pdf';
+            link.click();
+        });
+
+        // Mobile Menu Toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.getElementById('navlist').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
